@@ -4,7 +4,7 @@
   "description": "Controls creation and removal of workers at a regular interval",
   "main": "index.js",
   "scripts": {
-    "test": "TEST_PORT=12345 HARAKIRI_WORKER_CONN_LIMIT=2 HARAKIRI_WORKER_TTL=30000 jest --forceExit --silent --coverage --color",
+    "test": "TEST_PORT=12345 HARAKIRI_WORKER_CONN_LIMIT=2 HARAKIRI_WORKER_TTL=30000 jest --silent --coverage --color",
     "lint": "eslint --format node_modules/eslint-friendly-formatter .",
     "lint:fix": "eslint --fix --format node_modules/eslint-friendly-formatter ."
   },
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/smartfile/node-cluster-harakiri#readme",
   "devDependencies": {
+    "axios": "^0.27.2",
     "eslint": "^8.23.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-friendly-formatter": "^4.0.1",
