@@ -15,6 +15,11 @@
   "keywords": [
     "cluster"
   ],
+  "files": [
+    "lib/index.js",
+    "LICENSE",
+    "README.md"
+  ],
   "author": "Clifton Barnes <cbarnes@smartfile.com>",
   "license": "MIT",
   "bugs": {
