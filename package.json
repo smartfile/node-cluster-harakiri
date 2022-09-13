@@ -2,7 +2,7 @@
   "name": "cluster-harakiri",
   "version": "1.0.1",
   "description": "Controls creation and removal of workers at a regular interval",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "TEST_PORT=12345 HARAKIRI_WORKER_CONN_LIMIT=2 HARAKIRI_WORKER_TTL=30000 HARAKIRI_WORKER_CHECK_INTERVAL=10000 jest --silent --coverage --color",
     "lint": "eslint --format node_modules/eslint-friendly-formatter .",
