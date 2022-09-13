@@ -1,6 +1,6 @@
 {
   "name": "cluster-harakiri",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Controls creation and removal of workers at a regular interval",
   "main": "index.js",
   "scripts": {
