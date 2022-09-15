@@ -99,7 +99,7 @@ are created.
 | --- | --- | --- |
 | number |  | `HARAKIRI_WORKER_TTL`
 
-If present, the workers will be terminated after at least `ttl` ms. 
+If present, the workers will be terminated after at least `ttl` seconds.
 
 `connectionLimit`
 
@@ -113,9 +113,9 @@ If present, the workers will be terminated after at least `connectionLimit` conn
 
 | Type | Default value | Environmental variable
 | --- | --- | --- |
-| number | 30000 | `HARAKIRI_WORKER_CHECK_INTERVAL`
+| number | 30 | `HARAKIRI_WORKER_CHECK_INTERVAL`
 
-The periodic interval to check if there are any workers to terminate.
+The periodic interval, in seconds, to check if there are any workers to terminate.
 
 `termDelay`
 
@@ -123,7 +123,7 @@ The periodic interval to check if there are any workers to terminate.
 | --- | --- | --- |
 | number | | `HARAKIRI_WORKER_TERM_DELAY`
 
-If present, the amount of time to delay between terminating workers. This can be used to prevent
+If present, the amount of time to delay, in seconds, between terminating workers. This can be used to prevent
 many or all workers from being terminated at the same time.
 
 `restartWorker`
