@@ -126,6 +126,15 @@ The periodic interval, in seconds, to check if there are any workers to terminat
 If present, the amount of time to delay, in seconds, between terminating workers. This can be used to prevent
 many or all workers from being terminated at the same time.
 
+`closeTimeout`
+
+| Type | Default value | Environmental variable
+| --- | --- | --- |
+| number | | `HARAKIRI_WORKER_CLOSE_TIMEOUT`
+
+If present, the amount of time, in seconds, to wait for the worker to exit after termination. This can
+be used to prevent a worker from running indefinitely if the connection stays alive.
+
 `restartWorker`
 
 | Type | Default value | Environmental variable

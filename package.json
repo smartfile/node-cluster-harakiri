@@ -4,7 +4,7 @@
   "description": "Controls creation and removal of workers at a regular interval",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "TEST_PORT=12345 HARAKIRI_WORKER_CONN_LIMIT=2 HARAKIRI_WORKER_TTL=30 HARAKIRI_WORKER_CHECK_INTERVAL=10 jest --silent --coverage --color",
+    "test": "TEST_PORT=12345 HARAKIRI_WORKER_CONN_LIMIT=2 HARAKIRI_WORKER_TTL=30 HARAKIRI_WORKER_CHECK_INTERVAL=10 HARAKIRI_WORKER_CLOSE_TIMEOUT=3600 jest --silent --coverage --color",
     "lint": "eslint --format node_modules/eslint-friendly-formatter .",
     "lint:fix": "eslint --fix --format node_modules/eslint-friendly-formatter ."
   },
